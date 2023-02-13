@@ -1,6 +1,7 @@
+//created an "empty" variable for upcoming ifelse statement
 let empty = true
 
-//code taken from class example
+//code borrowed from class example
 //function that will display message in the console
 function displayLog(msg){
     console.log(msg); 
@@ -30,9 +31,16 @@ function displayText(msg, tagType){
 //Title of Task
 displayText("Pouring Out a Glass of Water","h1");
 
+//Group Members
+const groupMembers = ["Keya", "Austin", "Sammy"];
+let myList = document.createElement("ul");
+for(let i=0; i<groupMembers.length; i++){
+    displayText(groupMembers[i], "li")
+};
+
 //Initial Set Up
-displayText("Glass of water in front on the Table", "p");
-displayText("Both arms palms down on the Table", "p");
+displayText("Glass of water in front on the table", "p");
+displayText("Both arms palms down on the table", "p");
 
 //Prepare arm for contact with glass
 function arm(bodyPart, action, degree, direction){
@@ -45,7 +53,7 @@ arm("right shoulder", "rotate", "45 degrees", "counterclockwise")
 
 //Hold the cup
 function holdCup(action, bodyPart, strength, powerLevel){
-    displayText(`${bodyPart} around bottle, ${action} with a ${strength} of ${powerLevel}`)
+    displayText(`${bodyPart} around bottle, ${action} with a ${strength} of ${powerLevel}`, "p")
 }
 //parameters
 holdCup("squeeze", "Close hand", "grip strength", "25%")
@@ -61,9 +69,9 @@ pourWater("Rotate", "right wrist", "counterclockwise", "100 degrees");
 //ifelse statement to determine IF we should keep pouring ELSE stop
 function emptyOrNot(){
     if(empty == true){
-        displayText("The cup is empty");
+        displayText("The cup is empty", "p");
     } else {
-        displayText("Keep pouring");
+        displayText("Keep pouring", "p");
     }
 }
 
