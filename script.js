@@ -47,14 +47,14 @@ arm("right shoulder", "rotate", "45 degrees", "counterclockwise")
 function holdCup(action, bodyPart, strength, powerLevel){
     displayText(`${bodyPart} around bottle, ${action} with a ${strength} of ${powerLevel}`)
 }
-
-holdCup("close hand", "Squeeze", "grip strength", "25%")
+//parameters
+holdCup("squeeze", "Close hand", "grip strength", "25%")
 
 //Pour Water
 function pourWater(action, bodyPart, direction, degree,){
     displayText(`${action} ${bodyPart} ${direction} ${degree}`, "p")
 }
-
+//parameters
 pourWater("Lift", "right elbow", "vertically up", "25 degrees");
 pourWater("Rotate", "right wrist", "counterclockwise", "100 degrees");
 
@@ -73,7 +73,7 @@ emptyOrNot()
 function handOnGlass(action, bodyPart, direction, degree,){
     displayText(`${action} ${bodyPart} ${direction} ${degree}`, "p")
 }
-
+//parameters
 handOnGlass("Rotate", "right wrist", "100 degrees", "clockwise");
 handOnGlass("Move", "right elbow", "25 degrees", "vertically down");
 handOnGlass("Open", "right hand", "", "");
