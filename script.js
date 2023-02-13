@@ -39,6 +39,7 @@ function arm(bodyPart, action, degree, direction){
     displayText(`Take your ${bodyPart} and ${action} ${degree} ${direction}`,"p");
 }
 
+//parameters
 arm("right wrist", "rotate", "90 degrees", "clockwise")
 arm("right shoulder", "rotate", "45 degrees", "counterclockwise")
 
